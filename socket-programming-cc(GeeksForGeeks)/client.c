@@ -20,8 +20,8 @@ int main(int argc, char const* argv[])
     serv_addr.sin_port = htons(PORT);
  
     // Convert IPv4 and IPv6 addresses from text to binary
-    // form
-    if (inet_pton(AF_INET, "5w308173f5.eicp.vip", &serv_addr.sin_addr)
+    // form "5w308173f5.eicp.vip"
+    if (inet_pton(AF_INET, "103.46.128.53", &serv_addr.sin_addr)
         <= 0) {
         printf(
             "\nInvalid address/ Address not supported \n");
