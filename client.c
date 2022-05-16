@@ -3,7 +3,7 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <unistd.h>
-#define PORT 8080
+#define PORT 27284
  
 int main(int argc, char const* argv[])
 {
@@ -21,7 +21,7 @@ int main(int argc, char const* argv[])
  
     // Convert IPv4 and IPv6 addresses from text to binary
     // form
-    if (inet_pton(AF_INET, "192.168.110.175", &serv_addr.sin_addr)
+    if (inet_pton(AF_INET, "5w308173f5.eicp.vip", &serv_addr.sin_addr)
         <= 0) {
         printf(
             "\nInvalid address/ Address not supported \n");
